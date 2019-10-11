@@ -41,8 +41,7 @@ exports.up = function(knex) {
 
     .createTable("quantity", tbl => {
         tbl.increments()
-        tbl.integer("ingredients_id")
-        tbl.string("quantity")
+        tbl.integer("quantity")
         
     })
 };
